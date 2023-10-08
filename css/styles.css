@@ -460,7 +460,7 @@ margin: 10px 0px;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    grid-template-columns: repeat(8,12fr);
+    grid-template-columns: repeat(5,12fr);
     grid-template-rows: auto;
     width: 100%;
     text-align: center;
@@ -520,7 +520,8 @@ color: #adadad;
     /* background: #80808045; */
     border-radius: 3px;
     position: relative;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 14px;
 }
 .btn_filter::after{
     position: absolute;
@@ -647,4 +648,25 @@ margin-bottom: 20px;
         max-width: 120px;
         height: 100%;
     }
+}
+
+._about{
+
+}
+._about ul li img{
+
+width: 20px;
+
+margin-right: 10px;
+
+filter: drop-shadow(2px 4px 6px #adaded);
+}
+
+._about ul li{
+
+margin: 8px 0px;
+}
+._about ul{
+
+padding-left: 10px;
 }
