@@ -606,6 +606,74 @@ margin-bottom: 20px;
 .business_details p{
     
 }
+
+
+._about{
+
+}
+._about ul li img{
+
+/* width: 20px; */
+
+margin-right: 10px;
+
+filter: drop-shadow(2px 4px 6px #adaded);
+
+max-width: 100px;
+
+min-width: 50px;
+
+height: 70px;
+
+width: 100px;
+
+object-fit: cover;
+}
+
+._about ul li{
+
+margin: 8px 0px;
+
+text-align: center;
+
+/* border: 1px solid #000; */
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+padding: 10px;
+
+border-radius: 10px;
+
+box-shadow: 0 0 20px #d6d5d5;
+}
+._about ul{
+
+padding-left: 10px;
+
+display: grid;
+
+grid-template-columns: repeat(6,12fr);
+
+grid-template-rows: max-content;
+
+gap: 5px;
+}
+._about ul li p{
+    margin: 0;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@media(max-width: 992px){
+    ._about ul {
+        grid-template-columns: repeat(4,12fr);
+    }
+}
 @media(max-width: 768px){
     .banner_content h2 {
         font-size: 30px;
@@ -619,6 +687,9 @@ margin-bottom: 20px;
     .footer_links ul {
         grid-template-columns: repeat(4,12fr);
     }
+    ._about ul {
+        grid-template-columns: repeat(3,12fr);
+    }
 }
 @media(max-width: 576px){
     .info_warning p {
@@ -627,6 +698,10 @@ margin-bottom: 20px;
     .bs_nlist img {
         max-width: 180px;
         height: 100%;
+    }
+    ._about ul li img {
+        height: 40px;
+        width: 60px;
     }
 }
 @media(max-width: 426px){
@@ -648,25 +723,7 @@ margin-bottom: 20px;
         max-width: 120px;
         height: 100%;
     }
-}
-
-._about{
-
-}
-._about ul li img{
-
-width: 20px;
-
-margin-right: 10px;
-
-filter: drop-shadow(2px 4px 6px #adaded);
-}
-
-._about ul li{
-
-margin: 8px 0px;
-}
-._about ul{
-
-padding-left: 10px;
+    ._about ul {
+        grid-template-columns: repeat(2,12fr);
+    }
 }
